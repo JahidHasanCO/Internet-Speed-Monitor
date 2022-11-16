@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:disableDependentsState="false"
+        android:key="indicatorEnabled"
+        android:summary="@string/pref_enable_indicator_summary"
+        android:title="@string/pref_enable_indicator_title" />
+
+    <PreferenceCategory
+        android:dependency="indicatorEnabled"
+        android:title="@string/pref_notification_settings_title">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="showSettingsButton"
+            android:summary="@string/pref_settings_button_summary"
+            android:title="@string/pref_settings_button_title" />
+
+        <ListPreference
+            android:defaultValue="total"
+            android:entries="@array/indicator_speeds_titles"
+            android:entryValues="@array/indicator_speeds_values"
+            android:key="indicatorSpeedToShow"
+            android:summary="%s"
+            android:title="@string/pref_indicator_speed_to_show" />
+
+        <ListPreference
+            android:defaultValue="max"
+            android:entries="@array/notification_priority_titles"
+            android:entryValues="@array/notification_priority_values"
+            android:key="notificationPriority"
+            android:summary="%s"
+            android:title="@string/pref_notification_priority_title" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="notificationOnLockScreen"
+            android:summaryOff="@string/pref_lockscreen_notification_summary_off"
+            android:summaryOn="@string/pref_lockscreen_notification_summary_on"
+            android:title="@string/pref_lockscreen_notification_title" />
+
+        <ListPreference
+            android:defaultValue="Bps"
+            android:entries="@array/notification_speed_units_titles"
+            android:entryValues="@array/notification_speed_units_values"
+            android:key="indicatorSpeedUnit"
+            android:summary="%s"
+            android:title="@string/pref_speed_unit_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:dependency="indicatorEnabled"
+        android:title="@string/pref_general_options_title">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="startOnBoot"
+            android:summary="@string/pref_start_on_boot_summary"
+            android:summaryOff="@string/pref_start_on_boot_summary_off"
+            android:summaryOn="@string/pref_start_on_boot_summary_on"
+            android:title="@string/pref_start_on_boot_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

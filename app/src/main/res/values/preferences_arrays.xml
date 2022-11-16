@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="indicator_speeds_titles">
+        <item>@string/pref_indicator_speed_total</item>
+        <item>@string/pref_indicator_speed_down</item>
+        <item>@string/pref_indicator_speed_up</item>
+    </string-array>
+    <string-array name="indicator_speeds_values">
+        <item>total</item>
+        <item>down</item>
+        <item>up</item>
+    </string-array>
+
+    <string-array name="notification_priority_titles">
+        <item>@string/pref_notification_priority_max</item>
+        <item>@string/pref_notification_priority_high</item>
+        <item>@string/pref_notification_priority_default</item>
+        <item>@string/pref_notification_priority_low</item>
+    </string-array>
+    <string-array name="notification_priority_values">
+        <item>max</item>
+        <item>high</item>
+        <item>default</item>
+        <item>low</item>
+    </string-array>
+
+    <string-array name="notification_speed_units_titles">
+        <item>@string/pref_speed_unit_Bps</item>
+        <item>@string/pref_speed_unit_bps</item>
+    </string-array>
+    <string-array name="notification_speed_units_values">
+        <item>Bps</item>
+        <item>bps</item>
+    </string-array>
+</resources>

@@ -27,8 +27,8 @@
     <string name="notif_up_down_speed">Down: %s %s "   " Up: %s %s</string>
 
     <!-- Settings -->
-    <string name="pref_enable_indicator_title">Enable indicator</string>
-    <string name="pref_enable_indicator_summary">Show NetSpeed indicator in the status bar</string>
+    <string name="pref_enable_indicator_title">Enable Monitor</string>
+    <string name="pref_enable_indicator_summary">Show Internet Speed Monitor in the status bar</string>
 
     <string name="pref_notification_settings_title">Notification Settings</string>
 
@@ -60,5 +60,7 @@
     <string name="pref_start_on_boot_summary">Start NetSpeed indicator on boot</string>
     <string name="pref_start_on_boot_summary_on">The indicator will be started on boot</string>
     <string name="pref_start_on_boot_summary_off">The indicator will not be started on boot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -8,8 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp">
 
@@ -17,17 +17,18 @@
             android:layout_width="18dp"
             android:layout_height="18dp"
             android:alpha="0.9">
+
             <TextView
                 android:id="@+id/notificationSpeedValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="-3dp"
+                android:fontFamily="sans-serif-condensed"
                 android:textAlignment="center"
-                android:textSize="12dp"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-condensed" />
+                android:textSize="12dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/notificationSpeedUnit"
@@ -36,30 +37,30 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="-2dp"
                 android:textAlignment="center"
-                android:textSize="7dp"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                android:textSize="7dp"
                 android:textStyle="bold" />
         </RelativeLayout>
 
         <TextView
             android:id="@+id/notificationText"
+            style="@style/TextAppearance.Compat.Notification.Info"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="8dp"
-            style="@style/TextAppearance.Compat.Notification.Info"
-            android:textSize="14sp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/notificationSettings"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:alpha="0.5"
+            android:contentDescription="@string/notif_settings_button"
             android:scaleType="centerInside"
             android:src="@drawable/ic_baseline_settings_24"
-            android:alpha="0.5"
-            android:visibility="gone"
-           />
+            android:visibility="gone" />
 
     </LinearLayout>
 </layout>
